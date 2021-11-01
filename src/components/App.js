@@ -1,7 +1,7 @@
 import React from 'react';
 // import Accordion from './Accordion';
-import Search from './Search';
-
+// import Search from './Search';
+import Dropdown from './Dropdown';
 // const items = [
 //   {
 //     title: 'what is React?',
@@ -21,7 +21,8 @@ const App = () => {
   return (
     <div>
       {/* <Accordion items={items} /> */}
-      <Search />
+      {/* <Search /> */}
+      <Dropdown />
     </div>
   );
 };
