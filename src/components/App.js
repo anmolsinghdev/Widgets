@@ -17,12 +17,27 @@ import Dropdown from './Dropdown';
 //   },
 // ];
 
+const options = [
+  {
+    label: 'The Color Red',
+    value: 'red',
+  },
+  {
+    label: 'The Color Green',
+    value: 'green',
+  },
+  {
+    label: 'The Shade of Blue',
+    value: 'blue',
+  },
+];
+
 const App = () => {
   return (
     <div>
       {/* <Accordion items={items} /> */}
       {/* <Search /> */}
-      <Dropdown />
+      <Dropdown options={options} />
     </div>
   );
 };
