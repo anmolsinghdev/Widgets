@@ -30,14 +30,34 @@ const options = [
     label: 'The Shade of Blue',
     value: 'blue',
   },
+  {
+    label: 'The Color of black',
+    value: 'black',
+  },
+  {
+    label: 'The Shade of yellow',
+    value: 'yellow',
+  },
 ];
 
 const App = () => {
   const [selected, setSelected] = useState(options[0]);
+  // const [showDropdown, setShowDropdown] = useState(true);
+
   return (
     <div>
       {/* <Accordion items={items} /> */}
       {/* <Search /> */}
+      {/* <button onClick={() => setShowDropdown(!showDropdown)}>
+        Toggle Dropdown
+      </button>
+      {showDropdown ? (
+        <Dropdown
+          selected={selected}
+          onSelectedChange={setSelected}
+          options={options}
+        />
+      ) : null} */}
       <Dropdown
         selected={selected}
         onSelectedChange={setSelected}
