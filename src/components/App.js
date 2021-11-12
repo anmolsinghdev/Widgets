@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
+import React from 'react';
+
 // import Accordion from './Accordion';
 // import Search from './Search';
-import Dropdown from './Dropdown';
+// import Dropdown from './Dropdown';
+import Translate from './Translate';
+
 // const items = [
 //   {
 //     title: 'what is React?',
@@ -17,31 +21,31 @@ import Dropdown from './Dropdown';
 //   },
 // ];
 
-const options = [
-  {
-    label: 'The Color Red',
-    value: 'red',
-  },
-  {
-    label: 'The Color Green',
-    value: 'green',
-  },
-  {
-    label: 'The Shade of Blue',
-    value: 'blue',
-  },
-  {
-    label: 'The Color of black',
-    value: 'black',
-  },
-  {
-    label: 'The Shade of yellow',
-    value: 'yellow',
-  },
-];
+// const options = [
+//   {
+//     label: 'The Color Red',
+//     value: 'red',
+//   },
+//   {
+//     label: 'The Color Green',
+//     value: 'green',
+//   },
+//   {
+//     label: 'The Shade of Blue',
+//     value: 'blue',
+//   },
+//   {
+//     label: 'The Color of black',
+//     value: 'black',
+//   },
+//   {
+//     label: 'The Shade of yellow',
+//     value: 'yellow',
+//   },
+// ];
 
 const App = () => {
-  const [selected, setSelected] = useState(options[0]);
+  // const [selected, setSelected] = useState(options[0]);
   // const [showDropdown, setShowDropdown] = useState(true);
 
   return (
@@ -58,11 +62,8 @@ const App = () => {
           options={options}
         />
       ) : null} */}
-      <Dropdown
-        selected={selected}
-        onSelectedChange={setSelected}
-        options={options}
-      />
+
+      <Translate />
     </div>
   );
 };
