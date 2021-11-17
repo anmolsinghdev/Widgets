@@ -4,6 +4,7 @@ import Search from './Search';
 import Dropdown from './Dropdown';
 import Translate from './Translate';
 import Route from './Route';
+
 const items = [
   {
     title: 'what is React?',
@@ -44,7 +45,6 @@ const options = [
 
 const App = () => {
   const [selected, setSelected] = useState(options[0]);
-  // const [showDropdown, setShowDropdown] = useState(true);
 
   return (
     <div>
@@ -55,7 +55,12 @@ const App = () => {
         <Search />
       </Route>
       <Route path={'/dropdown'}>
-        <Dropdown />
+        <Dropdown
+          label={'select A Color'}
+          options={options}
+          selected={selected}
+          onSelectedChange={setSelected}
+        />
       </Route>
       <Route path={'/translate'}>
         <Translate />
