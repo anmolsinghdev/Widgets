@@ -4,6 +4,7 @@ import Search from './Search';
 import Dropdown from './Dropdown';
 import Translate from './Translate';
 import Route from './Route';
+import Header from './Header';
 
 const items = [
   {
@@ -48,6 +49,7 @@ const App = () => {
 
   return (
     <div>
+      <Header />
       <Route path={'/'}>
         <Accordion items={items} />
       </Route>
@@ -56,7 +58,7 @@ const App = () => {
       </Route>
       <Route path={'/dropdown'}>
         <Dropdown
-          label={'select A Color'}
+          label={'Select A Color'}
           options={options}
           selected={selected}
           onSelectedChange={setSelected}
